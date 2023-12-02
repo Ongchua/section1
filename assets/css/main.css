@@ -1,0 +1,170 @@
+.main {
+    max-width: 153rem;
+    margin: 0 auto;
+}
+.container {
+    padding: 7rem 0 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.text-head {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.text-head  h1 {
+    color:  #374639;
+    font-size: 4.5rem;
+    line-height: 5.3rem;
+    letter-spacing: -2.25px;
+}
+
+.text-head p {
+    color:  #3F514B;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-size: 1.9rem;
+    line-height: 2.7rem;
+}
+/* CARD */
+.card {
+    display: flex;
+    gap: 2.3rem ;
+}
+
+.product-card {
+    display: flex;
+    flex: 1 0 36.5rem;
+    gap: 1.8rem;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: transform .3s ease;
+
+}
+
+.product-card:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    backface-visibility: hidden;
+}
+.product-card:active {
+    transform: scale(1);
+
+}
+.image {
+    width: 100%;
+}
+
+.card-text-head {
+    color: #414F42;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: -0.4px;
+}
+.card-content {
+    color:  #3F514B;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-size: 1.7rem;
+    margin-top: .8rem;
+
+}
+
+.price {
+    color:  #3F514B;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-size: 1.8rem;
+    line-height: 23px;
+    text-transform: uppercase;
+    margin-top: .6rem;
+
+}
+.old-price {
+    color: #72776C;
+    font-kerning: none;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.13px;
+    text-decoration-line: line-through;
+}
+
+.distance {
+    margin-top: 2rem;
+}
+.week {
+    color: #72776C;
+    font-kerning: none;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.15px;
+    text-transform: uppercase;
+    padding: 1.2rem 0  .7rem;
+    border-top: 1px solid #ECEDEC;
+}
+.week span {
+    color: #4E5C58;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    margin-left: 2.4rem;
+}
+
+/* responsive */
+
+@media screen and (max-width: 90em) {
+    /* html {
+        font-size: 56.25%;
+    } */
+
+    .image img {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 64em) {
+    html {
+        font-size:56.25%;
+    }
+    .card {
+        flex-wrap: wrap;
+    }
+    .describe {
+        margin: 0 auto;
+        max-width: 80%;
+    }
+    .describe > * {
+        text-align: center;
+    }
+    .price {
+        margin-top: 2rem;
+    }
+    .image {
+        text-align: center;
+    }
+    .text-head {
+        max-width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    
+}
+@media screen and (max-width: 48em) {
+    .container{
+        margin: 0 ;
+    }
+    .card {
+        flex-wrap: wrap;
+    }
+    .text-head {
+        max-width: 100%;
+        margin: 0 2rem;
+    }
+    .image {
+        text-align: center;
+    }
+    .card-text-head {
+        text-align: center;
+    }
+}
